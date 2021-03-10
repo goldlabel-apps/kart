@@ -2,7 +2,7 @@
 
 ![Listingslab Kart Plugin ](https://raw.githubusercontent.com/listingslab-software/kart/master/docs/media/KartLogo_320.svg)
 
-##### Install & run
+##### Install & Run
 ```bash
 cd <working-dir>
 git clone https://github.com/listingslab-software/kart.git
