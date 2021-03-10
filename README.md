@@ -1,4 +1,4 @@
-![Listingslab Kart Plugin ](./docs/media/Kart_320.svg)
+![Listingslab Kart Plugin ](https://raw.githubusercontent.com/listingslab-software/kart/master/docs/media/KartLogo_320.svg)
 
 ## Listingslab Kart Plugin 
 
