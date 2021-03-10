@@ -1,6 +1,6 @@
 ## Listingslab Kart WordPress Plugin 
 
-> __Take the Aptitude Test__. Answer the following multiple choice question correctly to continue
+> __Take the Aptitude Test__. Answer the following multiple choice question correctly to continue  
 Select all true statements from the following  
 :negative_squared_cross_mark: &nbsp;WordPress is Great  
 :negative_squared_cross_mark: &nbsp;WordPress is Rubbish  
