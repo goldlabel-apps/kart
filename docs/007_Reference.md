@@ -1,7 +1,7 @@
 
 #### Reference
 
-- https://github.com/listingslab-software/advicator.git
-- https://github.com/features/project-management/
-- https://wordpress.com/support/markdown-quick-reference
-- https://woocommerce.github.io/code-reference/hooks/hooks.html
+- [Complete list of github markdown emoji markdown](https://gist.github.com/rxaviers/7360908)
+- [Github Agile](https://github.com/features/project-management/)
+- [Github markdown](https://wordpress.com/support/markdown-quick-reference)
+- [woocommerce hooks](https://woocommerce.github.io/code-reference/hooks/hooks.html)
