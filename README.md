@@ -1,12 +1,13 @@
 ## Listingslab Kart WordPress Plugin 
 
-> _aptitude test__. Please answer the following multiple choice question correctly to continue
-Select all true statements 
-:negative_squared_cross_mark: WordPress is Great 
-:negative_squared_cross_mark: WordPress is Rubbish 
+> __Aptitude Test__. Please answer the following multiple choice question correctly to continue
+Select all true statements  
+:negative_squared_cross_mark: WordPress is Great  
+:negative_squared_cross_mark: WordPress is Rubbish  
 :negative_squared_cross_mark: WordPress is the platform on which 60% of ALL websites are built
 
-![Listingslab Kart Plugin ](https://raw.githubusercontent.com/listingslab-software/kart/master/docs/media/KartLogo_320.svg)
+#### Docs
+[Documentation](./docs) for WordPress Administrators, Developers and DevOps
 
 ##### Install & Run
 ```bash
@@ -27,6 +28,4 @@ Show all the scripts in the package.json
 ```bash
 yarn run
 ```
-
-#### Docs
-[Documentation](./docs) for WordPress Administrators, Developers and DevOps
+![Listingslab Kart Plugin ](https://raw.githubusercontent.com/listingslab-software/kart/master/docs/media/KartLogo_320.svg)
