@@ -1,10 +1,10 @@
 ## Listingslab Kart WordPress Plugin 
 
-> __Aptitude Test__. Please answer the following multiple choice question correctly to continue
-Select all true statements  
-:negative_squared_cross_mark: WordPress is Great  
-:negative_squared_cross_mark: WordPress is Rubbish  
-:negative_squared_cross_mark: WordPress is the platform on which 60% of ALL websites are built
+> __Take the Aptitude Test__. Answer the following multiple choice question correctly to continue
+Select all true statements from the following  
+:negative_squared_cross_mark: &nbsp;WordPress is Great  
+:negative_squared_cross_mark: &nbsp;WordPress is Rubbish  
+:negative_squared_cross_mark: &nbsp;WordPress is the platform on which 60% of ALL websites are built
 
 #### Docs
 [Documentation](./docs) for WordPress Administrators, Developers and DevOps
