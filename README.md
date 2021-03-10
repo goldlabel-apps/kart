@@ -1,4 +1,15 @@
 
+# Listingslab Kart Plugin 
+
+
+
+## Docs
+
+[All docs](./docs)
+
+- WordPress Administrator
+- Developer
+- DevOps
 
 
 ## Usage
@@ -7,7 +18,10 @@
 cd <working-dir>
 git clone https://github.com/listingslab-software/kart.git
 cd kart
+yarn
+yarn run
 ```
+
 
 ##### Short Commands
 
