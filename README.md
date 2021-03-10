@@ -1,6 +1,7 @@
-![Listingslab Kart Plugin ](https://raw.githubusercontent.com/listingslab-software/kart/master/docs/media/KartLogo_320.svg)
 
 ## Listingslab Kart WordPress Plugin 
+
+![Listingslab Kart Plugin ](https://raw.githubusercontent.com/listingslab-software/kart/master/docs/media/KartLogo_320.svg)
 
 ##### Usage
 
@@ -11,12 +12,18 @@ cd kart
 yarn
 yarn run
 ```
-#### Short Commands
+#### Unix
 
 - Commit and push your branch with a dot commit
 
 ```bash
 git add . && git commit -m '.' && git push
+```
+
+- Show all the scripts in the package.json
+
+```bash
+yarn run
 ```
 
 #### Docs
