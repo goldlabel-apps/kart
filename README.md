@@ -20,15 +20,17 @@ cd kart
 yarn
 yarn run
 ```
-#### Useful Unix
 
-Commit and push your branch with a dot commit
-```bash
-git add . && git commit -m '.' && git push
-```
+![Listingslab Kart Plugin ](https://raw.githubusercontent.com/listingslab-software/kart/master/docs/media/KartLogo_320.svg)
+
+#### Useful Unix
 
 Show all the scripts in the package.json
 ```bash
 yarn run
 ```
-![Listingslab Kart Plugin ](https://raw.githubusercontent.com/listingslab-software/kart/master/docs/media/KartLogo_320.svg)
+
+Commit and push your branch with a dot commit
+```bash
+git add . && git commit -m '.' && git push
+```

@@ -4,7 +4,7 @@ clear
 
 echo 'Starting Kart Dev Server...'
 
-cd ./plugins/advicator/react/$1
+cd ./wordpress/listingslab-kart/react/$1
 yarn
 yarn start
 
