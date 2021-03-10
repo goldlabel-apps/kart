@@ -1,0 +1,9 @@
+#!/bin/bash
+# chmod ug+x dev
+
+clear
+echo 'Starting Dev' $1
+
+cd ./plugins/advicator/react/$1
+yarn
+yarn start
