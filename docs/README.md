@@ -8,3 +8,7 @@
 - [006_Pull_Requests](./006_Pull_Requests.md)
 - [007_Reference](./007_Reference.md)
 - [008_Sprint_Demo](./008_Sprint_Demo.md)
+
+
+
+[Complete list of github markdown emoji markup](https://gist.github.com/rxaviers/7360908) 
