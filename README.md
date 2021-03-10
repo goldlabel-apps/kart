@@ -1,19 +1,14 @@
+![Listingslab Kart Plugin ](./docs/media/Kart_640.png)
 
-# Listingslab Kart Plugin 
+## Listingslab Kart Plugin 
 
-
-
-## Docs
-
+#### Docs
 [All docs](./docs)
-
 - WordPress Administrator
 - Developer
 - DevOps
 
-
-## Usage
-
+######## Usage
 ```bash
 cd <working-dir>
 git clone https://github.com/listingslab-software/kart.git
@@ -21,9 +16,7 @@ cd kart
 yarn
 yarn run
 ```
-
-
-##### Short Commands
+#### Short Commands
 
 - Commit and push your branch with a dot commit
 
