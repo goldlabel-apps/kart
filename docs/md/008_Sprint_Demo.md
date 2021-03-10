@@ -1,10 +1,13 @@
-branch `git checkout -b sprintdemo/listingslab`
-Sprint Demo March 8th 2021  
-Product owner: Barney, Developer: Chris  
+
+Sprint Demo  
+Product Owner: John Smith, 
+Developers: Bob the developer, team  
+https://siteurl
+
 
 ## 1. Duplicate PROD
 
-Start by logging in to [PROD](https://woocommerce-368502-1795531.cloudwaysapps.com/wp-admin) & creating a local version of the site for development
+Start by logging in to [PROD](https://siteurl/wp-admin) & creating a local version of the site for development
 ```
 	- url: https://woocommerce-368502-1795531.cloudwaysapps.com/wp-admin
   - U: listingslab@me.com
@@ -27,15 +30,15 @@ To link the two pieces together there is probably a more elegant way than what I
 [Add this snippet in elementor]https://woocommerce-368502-1795531.cloudwaysapps.com/wp-admin/post.php?post=30&action=elementor)
 
 ```html
-<div id="kart-gummies-trial">
+<div id="kart-trial">
   <br /><br />
-  <a href="/wp-admin/plugins.php" target="_self">Acitvate Advicator Plugin</a>
+  <a href="/wp-admin/plugins.php" target="_self">Acitvate Kart Plugin</a>
 </div>
 ```
 
 ![localhost](../../media/sprintdemo/elementor.png)
 
-## 3. Advicator WordPress Plugin
+## 3. kart WordPress Plugin
 
 The plugin is really a React App. It gets included everytime WordPress renders. If it detects a div on the page with `id="kart-gummies-trial"`, then it will render the new Kart component into it
 
@@ -43,11 +46,11 @@ The trick here is going to effect the public HTML of the WordPress site without 
 
 React apps get compiled into a compressed build folder. It is that build folder which we can easily grab and inject into the theme using WordPress hooks and a bit of tweaking
 
-[admin-pwa.php](https://github.com/listingslab-software/advicator/blob/develop/plugins/advicator/react/admin-pwa.php)
+[admin-pwa.php](https://github.com/listingslab-software/kart/blob/develop/plugins/kart/react/admin-pwa.php)
 
 ```php
 <?php
-function advicator_PWA() {
+function kart_PWA() {
   $data = array();
     $fields = array(
         'name', 'description', 
@@ -58,8 +61,8 @@ function advicator_PWA() {
     }
     $data[ 'wordpress_variables' ] = 'can be added here';
 
-    if ( get_option( 'advicator_enabled' ) ){
-        echo '<div class="advicator-pwa">';
+    if ( get_option( 'kart_enabled' ) ){
+        echo '<div class="kart-pwa">';
         $html = file_get_contents(plugin_dir_path( __DIR__ ) . 'react/pwa/build/index.html');
         $html = str_replace('href="/static', 'href="'. plugin_dir_url( __DIR__ ) .
         'react/pwa/build/static', $html);
@@ -73,16 +76,16 @@ function advicator_PWA() {
 }
 ```
 
-Making changes to a plugin is done by developers of all kinds, but they all know how to  manage the codebase on [GitHub](https://github.com/listingslab-software/advicator/projects/1)
+Making changes to a plugin is done by developers of all kinds, but they all know how to  manage the codebase on [GitHub](https://github.com/listingslab-software/kart/projects/1)
 
-Developers clone the [advicator plugin repo](https://github.com/listingslab-software/advicator/tree/develop/plugins/advicator) and install it on their local WordPress. The plugin is [activated](https://woocommerce-368502-1795531.cloudwaysapps.com/wp-admin/plugins.php) like any plugin
+Developers clone the [kart plugin repo](https://github.com/listingslab-software/kart/tree/develop/plugins/kart) and install it on their local WordPress. The plugin is [activated](https://woocommerce-368502-1795531.cloudwaysapps.com/wp-admin/plugins.php) like any plugin
 
 ![clone](../../media/sprintdemo/clone.png) 
 
 The unix command `ln` can be used to create a symlink from wherever you cloned the repo to your wordpress installation which lets you make changes to the code and see the results in context 
 
 ```
-ln -s ~/Desktop/Node/advicator/plugins/advicator ~/Desktop/Node/wordpress/advicator/wp-content/plugins
+ln -s ~/Desktop/Node/kart/plugins/kart ~/Desktop/Node/wordpress/kart/wp-content/plugins
 
 ```
 
@@ -90,25 +93,25 @@ ln -s ~/Desktop/Node/advicator/plugins/advicator ~/Desktop/Node/wordpress/advica
 
 ## 4. PHP, JSON (JavaScript Object Notation) &amp; WordPress   
 
-Now we can code. The PHP piece is the place to begin because this is a WordPress plugin after all. Get started with the [Plugin Settings](https://woocommerce-368502-1795531.cloudwaysapps.com/wp-admin/admin.php?page=advicator) page. Here  set up the plugin's Options. There is only one option now; `advicator_enabled` to turn the plugin on and off. We can easily add new options like `advicator_affiliteId`
+Now we can code. The PHP piece is the place to begin because this is a WordPress plugin after all. Get started with the [Plugin Settings](https://woocommerce-368502-1795531.cloudwaysapps.com/wp-admin/admin.php?page=kart) page. Here  set up the plugin's Options. There is only one option now; `kart_enabled` to turn the plugin on and off. We can easily add new options like `kart_affiliteId`
 
-__`/advicator/plugins/advicator/admin/admin-traditional.php`__
+__`/kart/plugins/kart/admin/admin-traditional.php`__
 
 ```php
 <?php
 
-function advicator_register_settings() {
-   add_option( 'advicator_enabled', true );
+function kart_register_settings() {
+   add_option( 'kart_enabled', true );
    register_setting( 
-    'advicator_options_group', 
-    'advicator_enabled', 
-    'advicator_callback' );
+    'kart_options_group', 
+    'kart_enabled', 
+    'kart_callback' );
 
-  // add_option( 'advicator_affiliteId', 'XXX123' );
+  // add_option( 'kart_affiliteId', 'XXX123' );
   //  register_setting( 
-  //   'advicator_options_group', 
-  //   'advicator_affiliteId', 
-  //   'advicator_callback' );
+  //   'kart_options_group', 
+  //   'kart_affiliteId', 
+  //   'kart_callback' );
 
 }
 ...etc
@@ -122,7 +125,7 @@ The reason JSON important is because EVERYTHING talks JSON now, including all pa
 
 We might develop our own custom datashape which looks something like this
 
-[exmplePostObj.jsx](https://github.com/listingslab-software/advicator/blob/develop/plugins/advicator/react/pwa/src/redux/app/exmplePostObj.jsx)
+[exmplePostObj.jsx](https://github.com/listingslab-software/kart/blob/develop/plugins/kart/react/pwa/src/redux/app/exmplePostObj.jsx)
 
 ```javascript
 export const exmplePostObj = {
@@ -131,7 +134,7 @@ export const exmplePostObj = {
   "post_excerpt": `Lorem ipsum dolor sit amet, consectetur adipiscing elit`,
   "product_price": 6.99,
   "product_image": `/wp-content/uploads/2021/03/home_trial.png`,
-  "advicator_upsell_calm": {
+  "kart_upsell_calm": {
     "prices": {
       "mild": 29.99,
       "moderate": 49.99,
