@@ -7,5 +7,12 @@
 cd <working-dir>
 git clone https://github.com/listingslab-software/kart.git
 cd kart
-git add . && git commit -m 'commit message' && git push
+```
+
+##### Short Commands
+
+- Commit and push your branch with a dot commit
+
+```bash
+git add . && git commit -m '.' && git push
 ```
