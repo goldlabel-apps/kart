@@ -1,5 +1,12 @@
 ## Listingslab Kart WordPress Plugin 
 
+> _aptitude test__. Please answer the following multiple choice question correctly to continue
+Select all true statements
+
+- [] WordPress is Great
+- [] WordPress is Rubbish
+- [] WordPress is the platform on which 60% of ALL websites are built
+
 ![Listingslab Kart Plugin ](https://raw.githubusercontent.com/listingslab-software/kart/master/docs/media/KartLogo_320.svg)
 
 ##### Install & Run

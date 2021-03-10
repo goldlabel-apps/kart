@@ -1,10 +1,10 @@
 {
-	"name": "advicator",
-	"repository": "https://github.com/listingslab-software/advicator.git",
-	"author": "Chris Dorward <listingslab@gmail.com>",
+	"name": "kart",
+	"repository": "https://github.com/listingslab-software/kart.git",
+	"author": "listingslab <listingslab@gmail.com>",
 	"license": "MIT",
 	"scripts": {
-		"dev:pwa": "$PWD/dev pwa",
-		"wp": "$PWD/wp plugin"
+		"dev:kart": "$PWD/_dev kart",
+		"wp": "$PWD/_wp"
 	}
 }

@@ -1,9 +1,10 @@
 #!/bin/bash
-# chmod ug+x dev
-
+# chmod ug+x _dev
 clear
-echo 'Starting Dev' $1
+
+echo 'Starting Kart Dev Server...'
 
 cd ./plugins/advicator/react/$1
 yarn
 yarn start
+
