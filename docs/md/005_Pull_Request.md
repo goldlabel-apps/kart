@@ -1,5 +1,5 @@
 
-## Candidate: listingslab
+## Example Pull Request
 
 `https://github.com/listingslab-software/advicator/pull/10`
 
@@ -45,7 +45,7 @@ Changes: There is a new a Trial Pack product.
 - Navigate to [wp-admin](https://woocommerce-368502-1795531.cloudwaysapps.com/wp-admin/)
 - Log in to WordPress 
 	- U: listingslab@me.com
-	- P: theBuild3r
+	- P: notset
 - Navigate to Settings > [Plugins](https://woocommerce-368502-1795531.cloudwaysapps.com/wp-admin/plugins.php)
 - Click **Add New**
 - Click **Upload Plugin**
