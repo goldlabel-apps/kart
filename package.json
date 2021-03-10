@@ -1,5 +1,7 @@
 {
 	"name": "kart",
+	"version": "1.0.1",
+  	"description": "Better WooCommerce WordPress Kart",
 	"repository": "https://github.com/listingslab-software/kart.git",
 	"author": "listingslab <listingslab@gmail.com>",
 	"license": "MIT",
